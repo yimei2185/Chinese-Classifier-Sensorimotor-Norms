@@ -1,0 +1,14 @@
+{
+  "all_audited_rows_analysis_eligible": true,
+  "classifier_forms_with_multiple_ids": 0,
+  "missing_classifier_norm_cells": 0,
+  "missing_noun_norm_cells": 0,
+  "classifier_values_match_frozen": true,
+  "audited_rows": 2039,
+  "collapsed_edges": 2038,
+  "collapsed_duplicate_rows": 1,
+  "primary_n_classifiers": 104,
+  "all_prototype_values_finite": true,
+  "all_primary_correspondence_values_finite": true,
+  "expected_output_csv_count": 9
+}

@@ -1,0 +1,99 @@
+{
+  "analysis_id": "classifier_external_construct_validation_v1",
+  "date": "2026-09-04",
+  "seed": 20260904,
+  "n_permutations": 10000,
+  "n_bootstrap": 10000,
+  "n_stability_replicates": 500,
+  "input_hashes": {
+    "F:\\S1\\project\\classifiers\\260827\\releases\\classifier_norm_v1_20260827\\data\\classifier_master.csv": "3724C48B3EEC0747A4FC61C4A8214BD4F5AC5FA92CCD0C6E5064DDA30162A1FB",
+    "F:\\S1\\project\\classifiers\\260827\\outputs\\classifier_noun_build_v1\\analysis_eligible_pairs.csv": "D4AC2A72A0F2DF112C9938F3C5B063943F3A385BA4A881AE7AA4D47AE83A19E0",
+    "F:\\S1\\project\\classifiers\\260720\\H-cls_D-noun_V1.xlsx": "2FC44914B085491D3528A97F6FA51AB3ABD5FE932088BAC76BDF3A25A9CB2FE6",
+    "F:\\S1\\project\\classifiers\\260723\\noun_norm.xlsx": "F12666973D941A0C78C9B8BAFF88613096838562F731F83BAB497438452C7119"
+  },
+  "audited_rows": 2039,
+  "audited_corpus_noun_forms": 758,
+  "independent_norm_nouns": 757,
+  "unique_classifier_noun_edges_after_norm_concept_collapse": 2038,
+  "unique_classifier_ids": 147,
+  "unique_classifier_forms": 148,
+  "total_tokens": 223623,
+  "noun_type_distribution": {
+    "min": 1.0,
+    "q25": 1.0,
+    "median": 3.0,
+    "mean": 13.863945578231293,
+    "q75": 11.5,
+    "max": 451.0
+  },
+  "threshold_counts": {
+    "2": 104,
+    "5": 65,
+    "10": 40,
+    "20": 24
+  },
+  "frequency_and_p_noun_given_classifier_equivalence": "Within classifier, normalizing P(noun|classifier) yields the same weights as normalizing raw edge frequency; only frequency is calculated.",
+  "classifier_values_max_abs_difference_from_frozen": 2.220446049250313e-16,
+  "figure_font": "MicrosoftYaHei",
+  "figure_4_selected_examples": {
+    "Low advantage": "C188",
+    "Median advantage": "C098",
+    "High advantage": "C133"
+  },
+  "exploratory_stability_associations": [
+    {
+      "outcome": "matched_cosine",
+      "predictor": "n_noun_types",
+      "n_classifiers": 65,
+      "pearson_r": 0.09980919842297659,
+      "pearson_permutation_p_two_sided": 0.45035496450354967,
+      "spearman_rho": 0.008739482098971312,
+      "spearman_permutation_p_two_sided": 0.943005699430057
+    },
+    {
+      "outcome": "matched_cosine",
+      "predictor": "mean_stability_cosine",
+      "n_classifiers": 65,
+      "pearson_r": -0.049246215435938726,
+      "pearson_permutation_p_two_sided": 0.7018298170182982,
+      "spearman_rho": -0.020804195804195805,
+      "spearman_permutation_p_two_sided": 0.8693130686931307
+    },
+    {
+      "outcome": "matched_cosine",
+      "predictor": "classifier_mean_participant_n",
+      "n_classifiers": 65,
+      "pearson_r": -0.24104217407926076,
+      "pearson_permutation_p_two_sided": 0.0504949505049495,
+      "spearman_rho": 0.11160418892917627,
+      "spearman_permutation_p_two_sided": 0.36446355364463556
+    },
+    {
+      "outcome": "matched_advantage_cosine",
+      "predictor": "n_noun_types",
+      "n_classifiers": 65,
+      "pearson_r": 0.017130824584870766,
+      "pearson_permutation_p_two_sided": 0.8773122687731227,
+      "spearman_rho": 0.07764777955101078,
+      "spearman_permutation_p_two_sided": 0.533946605339466
+    },
+    {
+      "outcome": "matched_advantage_cosine",
+      "predictor": "mean_stability_cosine",
+      "n_classifiers": 65,
+      "pearson_r": 0.002975849016077007,
+      "pearson_permutation_p_two_sided": 0.9816018398160185,
+      "spearman_rho": 0.11341783216783216,
+      "spearman_permutation_p_two_sided": 0.36396360363963604
+    },
+    {
+      "outcome": "matched_advantage_cosine",
+      "predictor": "classifier_mean_participant_n",
+      "n_classifiers": 65,
+      "pearson_r": -0.14096024428779722,
+      "pearson_permutation_p_two_sided": 0.2518748125187481,
+      "spearman_rho": 0.03756820163717292,
+      "spearman_permutation_p_two_sided": 0.7702229777022298
+    }
+  ]
+}
